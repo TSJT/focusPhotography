@@ -1,0 +1,1 @@
+Focus Photography is website built by Ismael Prado: Full stack, and Abrham Carrillo: Web Designer.
