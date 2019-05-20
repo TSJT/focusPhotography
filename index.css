@@ -3,14 +3,7 @@ body {
     font-size: 15px;
     line-height: 1.5p;
     margin: 0;
-    background-color: rgb(43, 42, 42);
-}
-
-/* Global */
-.container {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
+    padding: 0;
 }
 
 ul {
@@ -81,63 +74,10 @@ displays */
     }
 }
 
-/* FOCUS pop up text animation */
-.container {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transition: translate(-50%,-50%);
-    width: 100%;
-}
-.container span {
-    color: white;
-    text-transform: uppercase;
-    display: block;
-    text-align:
-}
-.text1 {
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 15px;
-    margin-bottom: 0;
-    background: none;
-    position: relative;
-    animation: text 3s 1;
-}
-
-@keyframes text {
-    0%{
-        color: grey;
-        margin-bottom: 0;
-    }
-    30%{
-        letter-spacing: 25px;
-        margin-bottom: 0;
-    }
-    85%{
-        letter-spacing: 8pxpx;
-        margin-bottom: 0;
-    }
-}
-
-@media screen and (min-width: 601px){
-    .text1 {
-        font-size: 200px;
-        letter-spacing: 70px;
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .text1 {
-        font-size: 60px;
-    }
-}
-
 /* Showcase */
 
 .parallax {
-    min-height: 500px;
+    min-height: 800px;
     background: url(./focusMain.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -145,13 +85,68 @@ displays */
     background-repeat: no-repeat;
 }
 
-
-
-/* Footer */
-footer {
-    padding: 20px;
-    margin-top: 20px;
-    color: #ffffff;
-    background-color: rgb(43, 42, 42);
+.container {
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.container span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: transparent;
+    animation: text 3s 1;
+}
+
+.text2 {
+    font-size: 30px;
+    color: white;
+    animation: text1 3s 1;
+}
+
+@keyframes text {
+    0%{
+        color: transparent;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+@keyframes text1 {
+    0%{
+        color: transparent;
+    }
+    30%{
+        color: transparent;
+    }
+    85%{
+        color: transparent;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .text1 {
+        font-size: 200px;
+        letter-spacing: 70px;
+        margin-bottom: 20px
+    }
 }
