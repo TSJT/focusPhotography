@@ -3,8 +3,9 @@
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
-	font: bold 16px sans-serif;
+	font: bold 16px;
 	text-align: left;
+	font-family: 'Times New Roman', Times, serif;
 
 	padding: 50px 60px 40px;
 	margin-top: 80px;
@@ -21,8 +22,9 @@
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font: 38px;
 	margin: 0 0 10px;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 .footer-distributed h3 span{
@@ -146,7 +148,7 @@
 	float: right;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* This controls the Responsive part Website */
 
 @media (max-width: 1000px) {
 
